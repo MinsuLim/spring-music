@@ -8,7 +8,9 @@ image_resource:
 
 run:
   path: ./spring-music/gradlew
-  args: clean assemble
+  args:
+  - clean
+    assemble
 
 inputs:
   - name: spring-music
