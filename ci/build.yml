@@ -7,7 +7,7 @@ image_resource:
     repository: busybox
 
 run:
-  path: spring-music/build.sh
+  path: ./spring-music/ci/build.sh
 
 inputs:
   - name: spring-music
