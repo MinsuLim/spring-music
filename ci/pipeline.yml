@@ -20,7 +20,7 @@ jobs:
   - get: spring-music
     trigger: true
   - task: build
-    file: spring-music/ci/build.yml
+    file: ci/build.yml
   - put: staging-app
     params:
       manifest: spring-music/manifest.yml
