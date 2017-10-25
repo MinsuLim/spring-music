@@ -1,0 +1,27 @@
+resources:
+- name: spring-music-git
+  type: git
+  source:
+    uri: https://github.com/MinsuLim/spring-music.git
+    branch: master
+- name: staging-app
+  type: cf
+  source:
+    api: https://api.lgpaas.lgcns.com
+    username: {{username}}
+    password: {{password}}
+    organization: system
+    space: dev
+    skip_cert_check: true
+
+jobs:
+- name: spring-music-app
+  plan:
+  - get: spring-music-git
+    trigger: true
+  - task: build
+    file: spring-music/ci/build.yml
+  - put: staging-app
+    params:
+      manifest: spring-music/manifest.yml
+
