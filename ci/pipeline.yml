@@ -1,5 +1,5 @@
 resources:
-- name: spring-music-git
+- name: spring-music
   type: git
   source:
     uri: https://github.com/MinsuLim/spring-music.git
@@ -17,7 +17,7 @@ resources:
 jobs:
 - name: spring-music-app
   plan:
-  - get: spring-music-git
+  - get: spring-music
     trigger: true
   - task: build
     file: spring-music/ci/build.yml

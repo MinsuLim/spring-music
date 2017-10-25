@@ -10,7 +10,7 @@ run:
   path: ./spring-music/gradlew clean assemble
 
 inputs:
-  - name: spring-music-git
+  - name: spring-music
 
 outputs:
   - name: build
