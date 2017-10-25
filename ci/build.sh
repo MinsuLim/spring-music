@@ -3,5 +3,5 @@
 set -e -x
 
 pushd spring-music
-	gradlew clean assemble
+	./gradlew clean assemble
 popd
