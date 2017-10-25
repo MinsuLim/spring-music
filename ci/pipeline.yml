@@ -10,8 +10,8 @@ resources:
     api: https://api.lgpaas.lgcns.com
     username: {{username}}
     password: {{password}}
-    organization: system
-    space: dev
+    organization: demo
+    space: test
     skip_cert_check: true
 
 jobs:
