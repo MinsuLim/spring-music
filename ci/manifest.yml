@@ -1,7 +1,7 @@
 ---
 applications:
-- name: spring-music
+- name: spring-music-ci
   memory: 1G
-  host: spring-music
+  host: spring-music-ci
   path: ../../build/libs/spring-music.jar
 
