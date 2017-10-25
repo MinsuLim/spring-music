@@ -23,5 +23,5 @@ jobs:
     file: spring-music/ci/build.yml
   - put: staging-app
     params:
-      manifest: spring-music/manifest.yml
+      manifest: spring-music/ci/manifest.yml
 

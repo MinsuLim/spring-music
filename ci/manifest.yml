@@ -2,6 +2,6 @@
 applications:
 - name: spring-music
   memory: 512M
-  host: spring-music
+  host: spring
   path: ../../build/libs/spring-music.jar
 
